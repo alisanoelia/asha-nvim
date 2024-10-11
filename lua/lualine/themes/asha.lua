@@ -11,17 +11,17 @@ return {
 	normal = {
 		a = { bg = palette.statusline1, fg = palette.bg0, gui = "bold" },
 		b = { bg = palette.bg3, fg = palette.grey2 },
-		c = { bg = palette.bg1, fg = palette.grey1 },
+		c = { bg = palette.bg1, fg = palette.grey2 },
 	},
 	insert = {
 		a = { bg = palette.statusline2, fg = palette.bg0, gui = "bold" },
-		b = { bg = palette.bg3, fg = palette.fg },
-		c = { bg = palette.bg1, fg = palette.fg },
+		b = { bg = palette.bg3, fg = palette.grey2 },
+		c = { bg = palette.bg1, fg = palette.grey2 },
 	},
 	visual = {
 		a = { bg = palette.statusline3, fg = palette.bg0, gui = "bold" },
-		b = { bg = palette.bg3, fg = palette.fg },
-		c = { bg = palette.bg1, fg = palette.fg },
+		b = { bg = palette.bg3, fg = palette.grey2 },
+		c = { bg = palette.bg1, fg = palette.grey2 },
 	},
 	replace = {
 		a = { bg = palette.orange, fg = palette.bg0, gui = "bold" },

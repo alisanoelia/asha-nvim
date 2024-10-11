@@ -124,12 +124,12 @@ highlights.generate_syntax = function(palette, options)
 		SignColumn = syntax_entry(palette.fg, sign_column_respecting_colour(palette.bg1)),
 		IncSearch = syntax_entry(palette.bg0, palette.red),
 		Substitute = syntax_entry(palette.bg0, palette.yellow),
-		LineNr = syntax_entry(set_colour_based_on_ui_contrast(palette.bg5, palette.grey0), palette.none),
-		LineNrAbove = syntax_entry(set_colour_based_on_ui_contrast(palette.bg5, palette.grey0), palette.none),
-		LineNrBelow = syntax_entry(set_colour_based_on_ui_contrast(palette.bg5, palette.grey0), palette.none),
+		LineNr = syntax_entry(set_colour_based_on_ui_contrast(palette.bg0, palette.bg0), palette.none),
+		LineNrAbove = syntax_entry(set_colour_based_on_ui_contrast(palette.bg0, palette.bg0), palette.none),
+		LineNrBelow = syntax_entry(set_colour_based_on_ui_contrast(palette.bg0, palette.bg0), palette.none),
 		CursorLineNr = syntax_entry(
-			set_colour_based_on_ui_contrast(palette.grey1, palette.grey2),
-			sign_column_respecting_colour(palette.bg1)
+			set_colour_based_on_ui_contrast(palette.bg0, palette.bg0),
+			sign_column_respecting_colour(palette.bg0)
 		),
 		MatchParen = syntax_entry(palette.none, palette.bg4),
 		ModeMsg = syntax_entry(palette.fg, palette.none, { styles.bold }),
@@ -1192,12 +1192,12 @@ highlights.generate_syntax = function(palette, options)
 		TelescopeSelection = { link = "DiffAdd" },
 
 		-- lewis6991/gitsigns.nvim
-		GitSignsAdd = { link = "GreenSign" },
-		GitSignsChange = { link = "BlueSign" },
-		GitSignsDelete = { link = "RedSign" },
-		GitSignsAddNr = { link = "Green" },
-		GitSignsChangeNr = { link = "Blue" },
-		GitSignsDeleteNr = { link = "Red" },
+		GitSignsAdd = syntax_entry(palette.yellow, palette.none, { styles.bold }),
+		GitSignsChange = syntax_entry(palette.aqua, palette.none, { styles.bold }),
+		GitSignsDelete = syntax_entry(palette.red, palette.none, { styles.bold }),
+		GitSignsAddNr = syntax_entry(palette.yellow, palette.none, { styles.bold }),
+		GitSignsChangeNr = syntax_entry(palette.blue, palette.none, { styles.bold }),
+		GitSignsDeleteNr = syntax_entry(palette.red, palette.none, { styles.bold }),
 		GitSignsAddLn = { link = "DiffAdd" },
 		GitSignsChangeLn = { link = "DiffChange" },
 		GitSignsDeleteLn = { link = "DiffDelete" },
@@ -1779,8 +1779,8 @@ highlights.generate_syntax = function(palette, options)
 		MasonHighlightBlockBold = syntax_entry(palette.bg0, palette.aqua, { styles.bold }),
 		MasonHighlightBlockSecondary = syntax_entry(palette.bg0, palette.yellow),
 		MasonHighlightBlockBoldSecondary = syntax_entry(palette.bg0, palette.yellow, { styles.bold }),
-		MasonMuted = syntax_entry(palette.grey0, palette.none),
-		MasonMutedBlock = syntax_entry(palette.bg0, palette.grey0),
+		MasonMuted = syntax_entry(palette.red, palette.none),
+		MasonMutedBlock = syntax_entry(palette.bg0, palette.yellow),
 
 		-- nullchilly/fsread.nvim
 		FSPrefix = syntax_entry(palette.fg, transparency_respecting_colour(palette.bg0), { styles.bold }),

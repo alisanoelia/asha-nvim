@@ -33,146 +33,52 @@ local M = {}
 
 ---@class Palette: PaletteBase,PaletteBackground
 
----@alias Backgrounds "light" | "dark"
+---@alias Backgrounds "dark"
 ---@alias PaletteBackgrounds table<Backgrounds, PaletteBackground>
 
 ---@type PaletteBackgrounds
 local hard_background = {
 	dark = {
-		bg_dim = "#1e2326",
-		bg0 = "#272e33",
-		bg1 = "#2e383c",
-		bg2 = "#374145",
-		bg3 = "#414b50",
-		bg4 = "#495156",
-		bg5 = "#4f5b58",
+		bg_dim = "#09161a",
+		bg0 = "#1b2b30",
+		bg1 = "#1b2b30",
+		bg2 = "#1b2b30",
+		bg3 = "#2e3b3f",
+		bg4 = "#3a515d",
+		bg5 = "#4a6f7b",
 		bg_visual = "#4c3743",
 		bg_red = "#493b40",
 		bg_green = "#3c4841",
-		bg_blue = "#384b55",
-		bg_yellow = "#45443c",
-	},
-	light = {
-		bg_dim = "#f2efdf",
-		bg0 = "#fffbef",
-		bg1 = "#f8f5e4",
-		bg2 = "#f2efdf",
-		bg3 = "#edeada",
-		bg4 = "#e8e5d5",
-		bg5 = "#bec5b2",
-		bg_visual = "#f0f2d4",
-		bg_red = "#ffe7de",
-		bg_green = "#f3f5d9",
-		bg_blue = "#ecf5ed",
-		bg_yellow = "#fef2d5",
-	},
-}
-
----@type PaletteBackgrounds
-local medium_background = {
-	dark = {
-		bg_dim = "#232a2e",
-		bg0 = "#2d353b",
-		bg1 = "#343f44",
-		bg2 = "#3d484d",
-		bg3 = "#475258",
-		bg4 = "#4f585e",
-		bg5 = "#56635f",
-		bg_visual = "#543a48",
-		bg_red = "#514045",
-		bg_green = "#425047",
 		bg_blue = "#3a515d",
-		bg_yellow = "#4d4c43",
-	},
-	light = {
-		bg_dim = "#efebd4",
-		bg0 = "#fdf6e3",
-		bg1 = "#f4f0d9",
-		bg2 = "#efebd4",
-		bg3 = "#e6e2cc",
-		bg4 = "#e0dcc7",
-		bg5 = "#bdc3af",
-		bg_visual = "#eaedc8",
-		bg_red = "#fbe3da",
-		bg_green = "#f0f1d2",
-		bg_blue = "#e9f0e9",
-		bg_yellow = "#faedcd",
-	},
-}
-
----@type PaletteBackgrounds
-local soft_background = {
-	dark = {
-		bg_dim = "#293136",
-		bg0 = "#333c43",
-		bg1 = "#3a464c",
-		bg2 = "#434f55",
-		bg3 = "#4d5960",
-		bg4 = "#555f66",
-		bg5 = "#5d6b66",
-		bg_visual = "#5c3f4f",
-		bg_red = "#59464c",
-		bg_green = "#48584e",
-		bg_blue = "#3f5865",
-		bg_yellow = "#55544a",
-	},
-	light = {
-		bg_dim = "#e5dfc5",
-		bg0 = "#f3ead3",
-		bg1 = "#eae4ca",
-		bg2 = "#e5dfc5",
-		bg3 = "#ddd8be",
-		bg4 = "#d8d3ba",
-		bg5 = "#b9c0ab",
-		bg_visual = "#e1e4bd",
-		bg_red = "#f4dbd0",
-		bg_green = "#e5e6c5",
-		bg_blue = "#e1e7dd",
-		bg_yellow = "#f1e4c5",
+		bg_yellow = "#45443c",
 	},
 }
 
 ---@type table<Backgrounds, PaletteBase>
 local base_palette = {
-	light = {
-		fg = "#2d353b",
-		red = "#91615e",
-		orange = "#997459",
-		yellow = "#a18a5d",
-		green = "#667651",
-		aqua = "#5f8787",
-		blue = "#607f94",
-		purple = "#997459",
-		grey0 = "#374547",
-		grey1 = "#374145",
-		grey2 = "#343f44",
-		statusline1 = "#667651",
-		statusline2 = "#a18a5d",
-		statusline3 = "#91615e",
-		none = "NONE",
-	},
 	dark = {
-		fg = "#ddeedd",
-		red = "#91615e",
+		fg = "#e8e8e8",
+		-- red	
+		red = "#915a5a",
 		orange = "#997459",
 		yellow = "#a18a5d",
-		green = "#667651",
+		green = "#5c7a53",
 		aqua = "#5f8787",
 		blue = "#607f94",
 		purple = "#997459",
-		grey0 = "#374547",
-		grey1 = "#9ba9aa",
-		grey2 = "#9ba9aa",
-		statusline1 = "#667651",
+		grey0 = "#2e3b3f",
+		grey1 = "#3a515d",
+		grey2 = "#4a6f7b",
+		statusline1 = "#5c7a53",
 		statusline2 = "#a18a5d",
-		statusline3 = "#91615e",
+		statusline3 = "#5f8787",
 		none = "NONE",
 	},
 }
 
 ---Generates the colour palette based on the user's config
 ---@param options Config The package configuration table
----@param theme "light" | "dark" The user's background preference
+---@param theme "dark" The user's background preference
 ---@return Palette
 M.generate_palette = function(options, theme)
 	local background = options.background or "medium"
