@@ -1192,12 +1192,12 @@ highlights.generate_syntax = function(palette, options)
 		TelescopeSelection = { link = "DiffAdd" },
 
 		-- lewis6991/gitsigns.nvim
-		GitSignsAdd = syntax_entry(palette.yellow, palette.none, { styles.bold }),
-		GitSignsChange = syntax_entry(palette.aqua, palette.none, { styles.bold }),
-		GitSignsDelete = syntax_entry(palette.red, palette.none, { styles.bold }),
-		GitSignsAddNr = syntax_entry(palette.yellow, palette.none, { styles.bold }),
-		GitSignsChangeNr = syntax_entry(palette.blue, palette.none, { styles.bold }),
-		GitSignsDeleteNr = syntax_entry(palette.red, palette.none, { styles.bold }),
+		GitSignsAdd = syntax_entry(palette.yellow, palette.none),
+		GitSignsChange = syntax_entry(palette.aqua, palette.none),
+		GitSignsDelete = syntax_entry(palette.red, palette.none),
+		GitSignsAddNr = syntax_entry(palette.yellow, palette.none),
+		GitSignsChangeNr = syntax_entry(palette.blue, palette.none),
+		GitSignsDeleteNr = syntax_entry(palette.red, palette.none),
 		GitSignsAddLn = { link = "DiffAdd" },
 		GitSignsChangeLn = { link = "DiffChange" },
 		GitSignsDeleteLn = { link = "DiffDelete" },

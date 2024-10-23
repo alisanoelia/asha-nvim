@@ -57,7 +57,7 @@ local hard_background = {
 ---@type table<Backgrounds, PaletteBase>
 local base_palette = {
 	dark = {
-		fg = "#e8e8e8",
+		fg = "#f8e7c2",
 		-- red	
 		red = "#915a5a",
 		orange = "#997459",
