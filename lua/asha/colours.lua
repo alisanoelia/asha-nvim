@@ -39,17 +39,17 @@ local M = {}
 ---@type PaletteBackgrounds
 local hard_background = {
 	dark = {
-		bg_dim = "#09161a",
-		bg0 = "#1b2b30",
-		bg1 = "#1b2b30",
-		bg2 = "#1b2b30",
-		bg3 = "#2e3b3f",
-		bg4 = "#3a515d",
-		bg5 = "#4a6f7b",
+		bg_dim = "#141b1f",
+		bg0 = "#2e3b3f",
+		bg1 = "#1f272b",
+		bg2 = "#141a1b",
+		bg3 = "#1F272B",
+		bg4 = "#2e3b3f",
+		bg5 = "#1f272b",
 		bg_visual = "#4c3743",
 		bg_red = "#493b40",
 		bg_green = "#3c4841",
-		bg_blue = "#3a515d",
+		bg_blue = "#223f4d",
 		bg_yellow = "#45443c",
 	},
 }
@@ -57,8 +57,8 @@ local hard_background = {
 ---@type table<Backgrounds, PaletteBase>
 local base_palette = {
 	dark = {
-		fg = "#f8e7c2",
-		-- red	
+		-- fg = "#f8e7c2",
+		fg = "#c5c8c6",	
 		red = "#915a5a",
 		orange = "#997459",
 		yellow = "#a18a5d",
@@ -67,8 +67,8 @@ local base_palette = {
 		blue = "#607f94",
 		purple = "#997459",
 		grey0 = "#2e3b3f",
-		grey1 = "#3a515d",
-		grey2 = "#4a6f7b",
+		grey1 = "#2f3a3f",
+		grey2 = "#2e3b3f",
 		statusline1 = "#5c7a53",
 		statusline2 = "#a18a5d",
 		statusline3 = "#5f8787",

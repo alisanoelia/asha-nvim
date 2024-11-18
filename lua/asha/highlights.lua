@@ -105,7 +105,7 @@ highlights.generate_syntax = function(palette, options)
 		lCursor = { link = "Cursor" },
 		CursorIM = { link = "Cursor" },
 		CursorColumn = syntax_entry(palette.none, palette.bg1),
-		CursorLine = syntax_entry(palette.none, palette.bg1),
+		CursorLine = syntax_entry(palette.none, palette.bg5),
 		Directory = syntax_entry(palette.green, palette.none),
 		DiffAdd = syntax_entry(palette.none, palette.bg_green),
 		DiffChange = syntax_entry(palette.none, palette.bg_blue),
